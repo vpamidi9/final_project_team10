@@ -1,0 +1,45 @@
+****************************************
+ Report : check_design 
+ Options: { pre_route_stage }
+ Design : ORCA_TOP
+ Version: Q-2019.12-SP4
+ Date   : Sun May 28 06:16:33 2023
+****************************************
+
+Running mega-check 'pre_route_stage': 
+    Running atomic-check 'design_mismatch'
+    Running atomic-check 'scan_chain'
+    Running atomic-check 'mv_design'
+    Running atomic-check 'design_extraction'
+    Running atomic-check 'timing'
+    Running atomic-check 'routability'
+    Running atomic-check 'hier_pre_route'
+
+  *** EMS Message summary ***
+  ----------------------------------------------------------------------------------------------------
+  Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+  MV-012       Warn   1          %drvType '%driver' (supply net '%drvSupplyNet' [%drvVoltage]) ca...
+  TCK-001      Warn   25219      The reported endpoint '%endpoint' is unconstrained. Reason: '%re...
+  TCK-002      Warn   12         The register clock pin '%pin' has no fanin clocks. Mode:'%mode'.
+  TCK-012      Warn   12         The input port '%port' has no clock_relative delay specified. Mo...
+  ----------------------------------------------------------------------------------------------------
+  Total 25244 EMS messages : 0 errors, 25244 warnings, 0 info.
+  ----------------------------------------------------------------------------------------------------
+
+  *** Non-EMS message summary ***
+  ----------------------------------------------------------------------------------------------------
+  Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+  ZRT-022             1          Cannot find a default contact code for layer %s.
+  ZRT-027             1          Ignore %d top cell ports with no pins.
+  ZRT-613             2          RC layer preference is turned %s for this design.
+  ----------------------------------------------------------------------------------------------------
+  Total 4 non-EMS messages : 0 errors, 2 warnings, 2 info.
+  ----------------------------------------------------------------------------------------------------
+
+Warning: EMS database "check_design.ems" already exists, over-writing it. (EMS-040)
+
+Information: EMS database is saved to file 'check_design.ems'.
+Information: Non-EMS messages are saved into file 'check_design2023May28061633.log'.
+1

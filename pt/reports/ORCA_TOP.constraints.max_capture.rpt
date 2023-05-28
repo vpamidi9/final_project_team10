@@ -1,0 +1,102 @@
+****************************************
+Report : constraint
+	-all_violators
+	-path slack_only
+Design : ORCA_TOP
+Version: O-2018.06
+Date   : Sat May 27 23:49:33 2023
+****************************************
+
+
+
+   sequential_clock_pulse_width
+
+                             Required        Actual
+   Pin                      pulse width    pulse width       Slack
+   -----------------------------------------------------------------
+   I_CLOCKING/sys_2x_rst_ff_reg/CLK (low)
+                               1.036          0.939         -0.097  (VIOLATED)
+
+
+   max_capacitance
+
+                             Required        Actual
+   Pin                      Capacitance    Capacitance       Slack
+   -----------------------------------------------------------------
+   ZBUF_64_inst_53740/Y       82.000        161.985        -79.985  (VIOLATED)
+   ZBUF_64_inst_23336/Y       82.000        161.966        -79.966  (VIOLATED)
+   I_BLENDER_0/s3_op1_reg_9_/Q
+                              16.000         23.771         -7.771  (VIOLATED)
+   I_BLENDER_0/s3_op1_reg_7_/Q
+                              16.000         19.264         -3.264  (VIOLATED)
+   I_BLENDER_0/U6141/Y        16.000         19.258         -3.258  (VIOLATED)
+   occ_int2/cts_buf_646231879/Y
+                              82.000         85.014         -3.014  (VIOLATED)
+   I_BLENDER_1/s1_op2_reg_27_/Q
+                               8.000         10.691         -2.691  (VIOLATED)
+   I_BLENDER_1/U6655/Y        16.000         18.172         -2.172  (VIOLATED)
+   I_CONTEXT_MEM/U48/Y        32.000         33.842         -1.842  (VIOLATED)
+   I_BLENDER_1/R_541/Q        16.000         17.016         -1.016  (VIOLATED)
+   I_BLENDER_0/s2_op1_reg_2_/Q
+                              16.000         16.409         -0.409  (VIOLATED)
+   I_BLENDER_1/R_98/Q         16.000         16.220         -0.220  (VIOLATED)
+   I_BLENDER_1/R_752/Q         8.000          8.197         -0.197  (VIOLATED)
+   I_SDRAM_TOP/I_SDRAM_IF/mega_shift_0_reg_25__3_/Q
+                               8.000          8.065         -0.065  (VIOLATED)
+
+
+   min_capacitance
+
+                             Required        Actual
+   Pin                      Capacitance    Capacitance       Slack
+   -----------------------------------------------------------------
+   I_RISC_CORE/I_REG_FILE_REG_FILE_B_RAM/O2[0]
+                               0.100          0.011         -0.089  (VIOLATED)
+   I_RISC_CORE/I_REG_FILE_REG_FILE_B_RAM/O2[1]
+                               0.100          0.011         -0.089  (VIOLATED)
+   I_RISC_CORE/I_REG_FILE_REG_FILE_B_RAM/O2[2]
+                               0.100          0.011         -0.089  (VIOLATED)
+   I_RISC_CORE/I_REG_FILE_REG_FILE_B_RAM/O2[3]
+                               0.100          0.011         -0.089  (VIOLATED)
+   I_RISC_CORE/I_REG_FILE_REG_FILE_B_RAM/O2[4]
+                               0.100          0.011         -0.089  (VIOLATED)
+   I_RISC_CORE/I_REG_FILE_REG_FILE_B_RAM/O2[5]
+                               0.100          0.011         -0.089  (VIOLATED)
+   I_RISC_CORE/I_REG_FILE_REG_FILE_B_RAM/O2[6]
+                               0.100          0.011         -0.089  (VIOLATED)
+   I_RISC_CORE/I_REG_FILE_REG_FILE_B_RAM/O2[7]
+                               0.100          0.011         -0.089  (VIOLATED)
+   I_RISC_CORE/I_REG_FILE_REG_FILE_D_RAM/O2[8]
+                               0.100          0.011         -0.089  (VIOLATED)
+   I_RISC_CORE/I_REG_FILE_REG_FILE_D_RAM/O2[9]
+                               0.100          0.011         -0.089  (VIOLATED)
+   I_RISC_CORE/I_REG_FILE_REG_FILE_D_RAM/O2[10]
+                               0.100          0.011         -0.089  (VIOLATED)
+   I_RISC_CORE/I_REG_FILE_REG_FILE_D_RAM/O2[11]
+                               0.100          0.011         -0.089  (VIOLATED)
+   I_RISC_CORE/I_REG_FILE_REG_FILE_D_RAM/O2[12]
+                               0.100          0.011         -0.089  (VIOLATED)
+   I_RISC_CORE/I_REG_FILE_REG_FILE_D_RAM/O2[13]
+                               0.100          0.011         -0.089  (VIOLATED)
+   I_RISC_CORE/I_REG_FILE_REG_FILE_D_RAM/O2[14]
+                               0.100          0.011         -0.089  (VIOLATED)
+   I_RISC_CORE/I_REG_FILE_REG_FILE_D_RAM/O2[15]
+                               0.100          0.011         -0.089  (VIOLATED)
+
+
+   max_transition
+
+                             Required        Actual
+   Pin                      Transition     Transition        Slack
+   -----------------------------------------------------------------
+   I_BLENDER_1/s1_op2_reg_27_/Q
+                               0.405          0.502         -0.097  (VIOLATED)
+   I_BLENDER_0/s3_op1_reg_7_/Q
+                               0.168          0.192         -0.024  (VIOLATED)
+   I_BLENDER_1/R_541/Q         0.168          0.177         -0.009  (VIOLATED)
+   I_BLENDER_1/R_752/Q         0.137          0.139         -0.001  (VIOLATED)
+   I_BLENDER_0/s3_op1_reg_9_/Q
+                               0.240          0.241         -0.001  (VIOLATED)
+
+
+1

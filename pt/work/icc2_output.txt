@@ -1,0 +1,24 @@
+ 
+                              IC Compiler II (TM)
+
+                Version Q-2019.12-SP4 for linux64 - May 26, 2020
+ This SP release has significant feature enhancements. Please review the Release
+                       Notes associated with this release.
+
+                    Copyright (c) 1988 - 2020 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+Loading user preference file /u/ramadugu/.synopsys_icc2_gui/preferences.tcl
+icc2_shell> o
+Error: ambiguous command 'o' matched 11 commands:
+        (open_attachment, open_block, open_drc_error_data ...) (CMD-006)
+icc2_shell> exit
+Maximum memory usage for this session: 176.72 MB
+Maximum memory usage for this session including child processes: 176.72 MB
+CPU usage for this session:     16 seconds (  0.00 hours)
+Elapsed time for this session:     25 seconds (  0.01 hours)
+Thank you for using IC Compiler II.
+
