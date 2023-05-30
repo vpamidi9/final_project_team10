@@ -1,0 +1,49 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min
+	-max_paths 1
+	-sort_by slack
+Design : ORCA_TOP
+Version: O-2018.06
+Date   : Sun May 28 18:37:00 2023
+****************************************
+
+
+
+  Startpoint: I_CONTEXT_MEM/ram_write_addr_reg_4_
+               (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Endpoint: I_CONTEXT_MEM/I_CONTEXT_RAM_1_3
+               (rising edge-triggered flip-flop clocked by SYS_CLK)
+  Last common pin: I_CLOCKING/occ_int1/cts_buf_693832355/Y
+  Path Group: SYS_CLK
+  Path Type: min
+  Sigma: 3.0
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock SYS_CLK (rise edge)                              0.000      0.000
+  clock network delay (propagated)                       0.217      0.217
+  I_CONTEXT_MEM/ram_write_addr_reg_4_/CLK (SDFFARX1_RVT)
+                                                         0.000      0.217 r
+  I_CONTEXT_MEM/ram_write_addr_reg_4_/Q (SDFFARX1_RVT) <-
+                                                         0.058 &    0.275 f
+  I_CONTEXT_MEM/HFSBUF_205_527/Y (NBUFFX16_HVT)          0.024 &    0.299 f
+  I_CONTEXT_MEM/I_CONTEXT_RAM_1_3/A1[4] (SRAM2RW64x8)    0.005 &    0.304 f
+  data arrival time                                                 0.304
+
+  clock SYS_CLK (rise edge)                              0.000      0.000
+  clock network delay (propagated)                       0.248      0.248
+  clock reconvergence pessimism                         -0.015      0.232
+  I_CONTEXT_MEM/I_CONTEXT_RAM_1_3/CE1 (SRAM2RW64x8)                 0.232 r
+  library hold time                                      0.045      0.277
+  data required time                                                0.277
+  ------------------------------------------------------------------------------
+  data required time                                                0.277
+  data arrival time                                                -0.304
+  ------------------------------------------------------------------------------
+  statistical adjustment                                -0.004      0.023
+  slack (MET)                                                       0.023
+
+
+1

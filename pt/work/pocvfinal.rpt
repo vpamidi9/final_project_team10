@@ -1,0 +1,49 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min
+	-max_paths 1
+	-sort_by slack
+Design : ORCA_TOP
+Version: O-2018.06
+Date   : Sun May 28 22:42:52 2023
+****************************************
+
+
+  Startpoint: I_SDRAM_TOP/I_SDRAM_WRITE_FIFO_SD_FIFO_CTL_U2_count_int_reg_0_
+               (rising edge-triggered flip-flop clocked by SDRAM_CLK)
+  Endpoint: I_SDRAM_TOP/I_SDRAM_WRITE_FIFO_SD_FIFO_RAM_0
+               (rising edge-triggered flip-flop clocked by SDRAM_CLK)
+  Last common pin: occ_int2/cts_buf_646031877/Y
+  Path Group: SDRAM_CLK
+  Path Type: min
+  Sigma: 3.0
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock SDRAM_CLK (rise edge)                            0.000      0.000
+  clock network delay (propagated)                       0.171      0.171
+  I_SDRAM_TOP/I_SDRAM_WRITE_FIFO_SD_FIFO_CTL_U2_count_int_reg_0_/CLK (SDFFARX1_RVT)
+                                                         0.000      0.171 r
+  I_SDRAM_TOP/I_SDRAM_WRITE_FIFO_SD_FIFO_CTL_U2_count_int_reg_0_/Q (SDFFARX1_RVT)
+                                                         0.065 &    0.236 f
+  I_SDRAM_TOP/I_SDRAM_WRITE_FIFO_SD_FIFO_RAM_0/A2[0] (SRAM2RW64x32)
+                                                        -0.001 &    0.235 f
+  data arrival time                                                 0.235
+
+  clock SDRAM_CLK (rise edge)                            0.000      0.000
+  clock network delay (propagated)                       0.188      0.188
+  clock reconvergence pessimism                         -0.020      0.168
+  I_SDRAM_TOP/I_SDRAM_WRITE_FIFO_SD_FIFO_RAM_0/CE2 (SRAM2RW64x32)
+                                                                    0.168 r
+  library hold time                                      0.044      0.212
+  data required time                                                0.212
+  ------------------------------------------------------------------------------
+  data required time                                                0.212
+  data arrival time                                                -0.235
+  ------------------------------------------------------------------------------
+  statistical adjustment                                -0.004      0.020
+  slack (MET)                                                       0.020
+
+
+1
